@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="color-scheme" content="light only">
+   <meta name="color-scheme" content="light dark">
+   <link rel="stylesheet" href="./style.css">
+   <title>Image Editor</title>
+</head>
+
+<body>
+   <div class="container disable">
+      <h2>Простой редактор изображений</h2>
+      <div class="wrapper">
+         <div class="editor-panel">
+            <div class="filter">
+               <label class="title">Фильтры</label>
+               <div class="options">
+                  <button id="brightness" class="active">Яркость</button>
+                  <button id="saturation">Насыщение</button>
+                  <button id="inversion">Инверсия</button>
+                  <button id="grayscale">Оттенок</button>
+               </div>
+               <div class="slider">
+                  <div class="filter-info">
+                     <p class="name">Яркость</p>
+                     <p class="value">100%</p>
+                  </div>
+                  <input type="range" value="100" min="0" max="200">
+               </div>
+            </div>
+            <div class="rotate">
+               <div class="options">
+                  <button id="left">
+                     <i class="icon">
+                        <img src="https://www.svgrepo.com/show/510172/rotate-left.svg" alt="left">
+                     </i>
+                  </button>
+                  <button id="right">
+                     <i class="icon">
+                        <img src="https://www.svgrepo.com/show/510171/rotate-right.svg" alt="right">
+                     </i>
+                  </button>
+                  <button id="horizontal">
+                     <i class='icon'>
+                        <img src="https://www.svgrepo.com/show/535599/reflect-vertical.svg" alt="horizontal">
+                     </i>
+                  </button>
+                  <button id="vertical">
+                     <i class='icon'>
+                        <img src="https://www.svgrepo.com/show/535594/reflect-horizontal.svg" alt="vertical">
+                     </i>
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="preview-img">
+            <img src="./image-placeholder.svg" alt="preview-img">
+         </div>
+      </div>
+      <div class="controls">
+         <button class="reset-filter">Сброс фильтров</button>
+         <div class="row">
+            <input type="file" class="file-input" accept="image/*" hidden>
+            <button class="choose-img">Выбрать</button>
+            <button class="save-img">Сохранить</button>
+         </div>
+      </div>
+   </div>
+
+   <script src="./script.js"></script>
+
+</body>
+
+</html>

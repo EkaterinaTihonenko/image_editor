@@ -1,1 +1,1 @@
-# image_editor
+![Image alt](https://github.com/EkaterinaTihonenko/image_editor/blob/main/img/screen.PNG)
